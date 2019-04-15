@@ -1,0 +1,41 @@
+<html>
+  <head>
+    <title>Animação</title>
+    <meta charset="UTF-8">
+  </head>
+<body>
+<style>
+h1{display:inline;}
+.style_css{
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+}
+.load-hidden{
+    visibility: hidden;
+}
+</style>
+<div class="style_css">
+    <h1 class="animation1 load-hidden">
+    Hello
+    </h1>
+
+    <h1 class="animation2 load-hidden">
+    My
+    </h1>
+    <h1 class="animation3 load-hidden">
+     world
+    </h1>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.4.0.js"></script>
+<script src="https://unpkg.com/scrollreveal"></script>
+<script>
+
+ScrollReveal().reveal('.animation1', { delay: 1000 });
+ScrollReveal().reveal('.animation2', { delay: 1700 });
+ScrollReveal().reveal('.animation3', { delay: 2000 });
+</script>
+</body>
+</html>
